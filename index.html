@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number Guess</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <script defer src="./js/custom.js"></script>
+  </head>
+  <body>
+    <div id="wrapper">
+      <header>
+        <div class="inner">
+          <h1>Number Guess</h1>
+          <div class="desc">
+            <h2>1부터 9까지의 수 중 랜덤 숫자 3개를 맞춰보세요!</h2>
+            <ul>
+              <li class="correct">숫자, 자리 모두 일치</li>
+              <li class="partial">숫자만 일치</li>
+              <li class="incorrect">숫자, 자리 불일치</li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="inner">
+          <div class="container">
+            <div class="num-wrap">
+              <button class="num-btn">1</button>
+              <button class="num-btn">2</button>
+              <button class="num-btn">3</button>
+              <button class="num-btn">4</button>
+              <button class="num-btn">5</button>
+              <button class="num-btn">6</button>
+              <button class="num-btn">7</button>
+              <button class="num-btn">8</button>
+              <button class="num-btn">9</button>
+            </div>
+            <div class="result-wrap">
+              <h3>RESULT</h3>
+              <ol></ol>
+            </div>
+          </div>
+        </div>
+      </main>
+    </div>
+    <div class="pop-wrap">
+      <div class="pop clear">
+        <h3>clear</h3>
+        <p>축하합니다!</p>
+        <button class="replay btn" onclick="reset();"">다시하기</button>
+      </div>
+      <div class="pop fail">
+        <h3>fail</h3>
+        <p></p>
+        <button class="replay btn" onclick="reset();">다시하기</button>
+      </div>
+    </div>
+  </body>
+</html>
